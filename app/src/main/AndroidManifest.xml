@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoJose"
+        tools:targetApi="31">
+        <activity
+            android:name=".crearequipobasquet"
+            android:exported="false" />
+        <activity
+            android:name=".crearequipofutbol"
+            android:exported="false" />
+        <activity
+            android:name=".crearequipofutsal"
+            android:exported="false" />
+        <activity
+            android:name=".selecciondeequipo"
+            android:exported="false" />
+        <activity
+            android:name=".MisEstadisticas"
+            android:exported="false" />
+        <activity
+            android:name=".CrearEquipo"
+            android:exported="false" />
+        <activity
+            android:name=".CrearLigas"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCampeonatos"
+            android:exported="false" />
+        <activity
+            android:name=".EstadisticasDeJugadores"
+            android:exported="false" />
+        <activity
+            android:name=".MiEquipo"
+            android:exported="false" />
+        <activity
+            android:name=".MisLigas"
+            android:exported="false" />
+        <activity
+            android:name=".MisCampeonatos"
+            android:exported="false" />
+        <activity
+            android:name=".OlvidarCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".Primera"
+            android:exported="false"
+            android:label="@string/title_activity_primera"
+            android:theme="@style/Theme.ProyectoJose" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

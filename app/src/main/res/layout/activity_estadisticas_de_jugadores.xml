@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadisticasDeJugadores">
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276"
+        app:srcCompat="@drawable/usuario" />
+
+    <ScrollView
+        android:id="@+id/scrollView10"
+        android:layout_width="253dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Roberto_Carlos" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_roberto" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goles_roberto" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Defensa" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView13"
+        android:layout_width="253dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Dario_Osorio" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_osorio" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goles_osorio" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mediocampista" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView14"
+        android:layout_width="253dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Cristiano_Ronaldo" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_cr7" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goles_cr7" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/extremo_izquierdo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView12"
+        android:layout_width="253dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Claudio" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_bravo" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/penales" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/portero" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="170dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ScrollView
+        android:id="@+id/scrollView11"
+        android:layout_width="253dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Alexis" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_alexis" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goles_alexis" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/delantero_alexis" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/black"
+        android:onClick="homeestadisticasjugadores"
+        android:text="@string/btn_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Estadisticas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ScrollView
+        android:id="@+id/scrollView15"
+        android:layout_width="253dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Arturo" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/años_vidal" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/goles_vidal" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/central_vidal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132"
+        app:srcCompat="@drawable/usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

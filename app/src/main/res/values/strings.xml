@@ -1,0 +1,191 @@
+<resources>
+
+
+    //Primera
+
+    <string name="la_app">Esta app esta enfocada para todo tipo de publico, mas especifico para los amantes del deporte, aca podras unirte/crear tus ligas, campeonatos y tus equipos, al igual que podras ver las estadisticas de estos mismos.</string>
+    <string name="btn_regresar_login">Regresar al Login</string>
+
+
+    //Login
+
+    <string name="app_name">Proyecto Jose</string>
+    <string name="correo">Correo</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="btnIngresarLogin">Ingresar</string>
+    <string name="title_activity_primera">Primera</string>
+
+
+    //Registrate
+
+    <string name="usuario">Usuario</string>
+    <string name="contrasenia2">Reingrese contraseña</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="registrate">Crear Cuenta</string>
+
+
+    //Menu
+
+    <string name="MisCampeonatos">Mis Campeonatos</string>
+    <string name="MisLigas">Mis Ligas</string>
+    <string name="MisEquipo">Mi Equipo</string>
+
+
+    //Mis Campeonatos
+
+    <string name="mis_campeonatos2">Mis Campeonatos</string>
+    <string name="crear_mis_campeonatos2">Crear mi Campeonato</string>
+    <string name="campeonato_de_futsal">Campeonato de futsal La Chimba</string>
+    <string name="campeonato_de_basquetball">Campeonato de Basquetball Karen Gallardo</string>
+    <string name="campeonato_de_futbol">Campeonato de Futbol Estadio Luis Valenzuela</string>
+    <string name="btn_Crear">Crear</string>
+    <string name="btn_home">HOME</string>
+    //
+    <string name="ingrese_deporte">Ingrese El tipo de Deporte</string>
+    <string name="nombre_crear_campeonato">Ingrese el nombre del Campeonato</string>
+    <string name="lugar_campeonato">Ingrese el lugar</string>
+    <string name="tipo_liga">Ingrese la Liga</string>
+    <string name="dia_competencia">Ingrese el dia de Competencia</string>
+
+
+    //Mis Ligas
+
+    <string name="liga_nacional">Liga Nacional</string>
+    <string name="Liga_regional">Liga Regional</string>
+    <string name="Liga_de_Barrio">Liga de Barrio</string>
+    <string name="btn_crear_liga">Crea tu Liga</string>
+    <string name="btn_home2">HOME</string>
+    //
+    <string name="ingrese_deporte_liga">Ingrese El tipo de Deporte</string>
+    <string name="nombre_crear_campeonato_liga">Ingrese el nombre de la Liga</string>
+    <string name="lugar_campeonato_liga">Ingrese el lugar</string>
+    <string name="numero_equipos_liga">Ingrese un numero de Equipos</string>
+    <string name="Equipos_participar_liga">Ingrese los equipos a Participar</string>
+
+
+    //Mi Equipo
+
+    <string name="MI_Equipo">Mi Equipo</string>
+    <string name="btn_Crea_tu_Equipo">CREA TU EQUIPO</string>
+    <string name="btn_home3">HOME</string>
+    <string name="Jose_Parada">Jose Parada</string>
+    <string name="Alexis_Sanchez">Alexis Sanchez</string>
+    <string name="Arturo_Vidal">Arturo Vidal</string>
+    <string name="Claudio_Bravo">Claudio Bravo</string>
+    <string name="Cristiano_Ronaldo">Cristiano Ronaldo</string>
+    <string name="Dario_Osorio">Dario Osorio</string>
+    <string name="Roberto_Carlos">Roberto Carlos</string>
+
+
+    //Estadisticas de jugador
+
+    <string name="btn_home4">HOME</string>
+    <string name="Alexis">Alexis Sanchez</string>
+    <string name="Arturo">Arturo Vidal</string>
+    <string name="Claudio">Claudio Bravo</string>
+    <string name="Cristiano">Cristiano Ronaldo</string>
+    <string name="Dario">Dario Osorio</string>
+    <string name="Roberto">Roberto Carlos</string>
+    <string name="Estadisticas">Estadisticas De Jugadores</string>
+    //alexis
+    <string name="años_alexis">22 Años</string>
+    <string name="goles_alexis">7 Goles</string>
+    <string name="delantero_alexis">Delantero</string>
+    //arturo vidal
+    <string name="años_vidal">29 Años</string>
+    <string name="goles_vidal">10 Goles</string>
+    <string name="central_vidal">Central</string>
+    //Claudio Bravo
+    <string name="años_bravo">30 Años</string>
+    <string name="penales">41 Penales Atajados</string>
+    <string name="portero">Portero</string>
+    //Cr7
+    <string name="años_cr7">25 Años</string>
+    <string name="goles_cr7">100 Goles</string>
+    <string name="extremo_izquierdo">Extremo Izquierdo</string>
+    //Dario Osorio
+    <string name="años_osorio">19 Años</string>
+    <string name="goles_osorio">90 Goles</string>
+    <string name="mediocampista">Medio Campista</string>
+    //Roberto Carlos
+    <string name="años_roberto">20 Años</string>
+    <string name="goles_roberto">80 Goles</string>
+    <string name="Defensa">Defensa</string>
+
+
+    //Crear mis Campeonatos
+
+    <string name="tipo_de_deporte">Tipo De Deporte</string>
+    <string name="nombre_campeonato">Nombre del Campeonato</string>
+    <string name="lugar_del_Campeonato">Lugar del Campeonato</string>
+    <string name="tipo_de_liga">Tipo de Liga</string>
+    <string name="dia_de_competencia">Dia de Competencia</string>
+    <string name="btn_finalizar_campeonato">Crear y Finalizar</string>
+    <string name="btn_home5">HOME</string>
+
+
+    //Crear mis Ligas
+
+    <string name="deporteLiga">Tipo de Deporte</string>
+    <string name="nombreLiga">Nombre de la Liga</string>
+    <string name="sector">Sector/lugar</string>
+    <string name="cuantosequipos">Cuantos equipos Participaran</string>
+    <string name="equiposaparticipar">Ingrese Equipos a Participar</string>
+    <string name="btnCrearLiga">Crear y Finalizar</string>
+    <string name="btn_home6">HOME</string>
+
+
+    //Crear mis equipos
+
+    <string name="Elija_el_deporte">Elija el Deporte De Su Nuevo Equipo</string>
+    <string name="btn_futsalll">Futsal</string>
+    <string name="btn_futbolll">Futbol</string>
+    <string name="btn_basquettt">Basquet</string>
+    <string name="btn_home7">HOME</string>
+
+
+    //Crear equipo Futsal
+
+    <string name="nombre_equipo_futsal">NOMBRE DEL EQUIPO</string>
+    <string name="nombre_jugadores_futsal">NOMBRE DE LOS JUGADORES</string>
+    <string name="suplentes_dt_futsal">Suplentes y DT</string>
+    <string name="btn_home8">HOME</string>
+    <string name="crear_equipo_futsal">Crear Y Finalizar</string>
+
+    <string name="ingrese_nombre_equipo_futsal">Ingrese un nombre de Equipo</string>
+    <string name="ingrese_nombre_jugadores_futsal">Ingrese los nombres de los jugadores de Basquet</string>
+    <string name="ingrese_suplente_dt_futsal">Ingrese el los suplentes y el DT</string>
+
+
+    //Crear equipo Futbool
+
+    <string name="nombre_equipo_futbol">NOMBRE DEL EQUIPO</string>
+    <string name="nombre_de_los_jugadores_futbol">NOMBRE DE LOS JUGADORES</string>
+    <string name="suplentes_dt_futbol">Suplentes y DT</string>
+    <string name="btncrearyfinalizarequipofutsal">CREAR Y FINALIZAR</string>
+    <string name="btn_home9">HOME</string>
+
+    <string name="ingrese_nombre_equipo_futbol">Ingrese un nombre de Equipo</string>
+    <string name="ingrese_nombre_jugadores_futbol">Ingrese los nombres de los jugadores de Basquet</string>
+    <string name="ingrese_suplente_dt_futbol">Ingrese el los suplentes y el DT</string>
+
+
+    //Crear equipo basquet
+    <string name="nombre_equipo_basquett">NOMBRE DEL EQUIPO</string>
+    <string name="nombre_de_los_jugadores_basquett">NOMBRE DE LOS JUGADORES</string>
+    <string name="suplentes_dt_basquett">Suplentes y DT</string>
+    <string name="btncrearyfinalizarequipobasquett">CREAR Y FINALIZAR</string>
+    <string name="btn_home10">HOME</string>
+    //
+    <string name="nombre_equipo_basquet">Ingrese un nombre de Equipo</string>
+    <string name="nombre_jugadores_basquet">Ingrese los nombres de los jugadores de Basquet</string>
+    <string name="suplente_dt_basquet">Ingrese el los suplentes y el DT</string>
+
+
+    //Nombre De los Fragmentos pantalla
+    <string name="campeonatos_mis">Campeonatos</string>
+    <string name="ligas_mis">Ligas</string>
+    <string name="equipo_mi">Equipo</string>
+    <string name="estadisticasFragmentos">Estadisticas</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/MisCampeonatos" />
+    <item
+        android:id="@+id/ML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/MisLigas" />
+    <item
+        android:id="@+id/ME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/MisEquipo" />
+    <item
+        android:id="@+id/E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/Estadisticas" />
+</menu>
