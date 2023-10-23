@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "3484730136",
+    "project_id": "proyecto-iot-22cf5",
+    "storage_bucket": "proyecto-iot-22cf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3484730136:android:30f260bd78d49e4d18946d",
+        "android_client_info": {
+          "package_name": "com.example.proyectojose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwplsgdlVFExTSoilL9IK6qF89Sw8l82w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

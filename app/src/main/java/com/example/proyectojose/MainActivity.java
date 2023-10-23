@@ -8,13 +8,21 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.Firebase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 public class MainActivity extends AppCompatActivity {
+    private StorageReference mStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mStorage = FirebaseStorage.getInstance().getReference();
     }
+
+
 
 
     public void login(View v){
@@ -35,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
 
     public void crearCuenta(View v){
         Intent i = new Intent(this,RegistrarCuenta.class);

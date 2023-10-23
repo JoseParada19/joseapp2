@@ -3,6 +3,7 @@ package com.example.proyectojose;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.google.android.material.tabs.TabLayout;
 
 
 public class Primera extends AppCompatActivity {
@@ -20,6 +23,64 @@ public class Primera extends AppCompatActivity {
         setContentView(R.layout.activity_primera);
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
+
+        TabLayout tl = (TabLayout) findViewById(R.id.tablayout);
+        tl.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                //codificar cosas a ejecutar cuando apretas una pestaña
+                int position = tab.getPosition();
+
+                switch (position){
+                    case 0:
+                        //llama al fragmento campeonatoF
+                        HomeF f0 = new HomeF();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f0).commit();
+                        Toast.makeText(getApplicationContext(),"Home", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        //llama al fragmento campeonatoF
+                        CampeonatoF f1 = new CampeonatoF();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f1).commit();
+                        Toast.makeText(getApplicationContext(),"Campeonatos", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        //Llamar al fragmento ligasF
+                        LigasF f2 = new LigasF();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f2).commit();
+                        Toast.makeText(getApplicationContext(),"Ligas", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        //Llamar a EquipoF
+                        EquiposF f3 = new EquiposF();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f3).commit();
+                        Toast.makeText(getApplicationContext(),"Equipo", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 4:
+                        //Llamar al fragmento EstadisticasF
+                        EstadisticasF f4 = new EstadisticasF();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f4).commit();
+                        Toast.makeText(getApplicationContext(),"Estadisticas", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                //codificar cosas a ejecutar cuando una pestaña deja de estar seleccionado
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                //codificar cosas a ejecutar cuando una pestaña se vuelve a seleccionar
+            }
+        });
+
+
+
+
+
     }
 
     @Override
