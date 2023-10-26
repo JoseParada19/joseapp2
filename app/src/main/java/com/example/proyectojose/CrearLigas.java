@@ -15,13 +15,13 @@ public class CrearLigas extends AppCompatActivity {
     }
 
     public void home90(View v){
-        Intent i = new Intent(this, HomeF.class);
+        Intent i = new Intent(this, Primera.class);
         startActivity(i);
     }
 
     public void crearalgo1(View v){
         System.out.println("ALOOOOOOOO");
-        Intent i = new Intent(this, HomeF.class);
+        Intent i = new Intent(this, Primera.class);
         startActivity(i);
         System.out.println("CHAOOOOO");
     }
