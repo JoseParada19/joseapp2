@@ -1,18 +1,25 @@
 package com.example.proyectojose;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.Firebase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.BitSet;
+
 public class MainActivity extends AppCompatActivity {
+    static final int REQUEST_IMAGE_CAPTURE = 1;
     private StorageReference mStorage;
 
     @Override
@@ -22,7 +29,24 @@ public class MainActivity extends AppCompatActivity {
         mStorage = FirebaseStorage.getInstance().getReference();
     }
 
-
+    //public void tomar_foto(View v){
+    //    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    //    if(takePictureIntent.resolveActivity(getPackageManager())!=null){
+    //        startActivityForResult(takePictureIntent,REQUEST_IMAGE_CAPTURE);
+    //    }
+    //}
+//
+    //@Override
+    //protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    //    super.onActivityResult(requestCode, resultCode, data);
+    //    if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
+    //        Bundle extras = data.getExtras();
+    //        Bitmap imageBitmap = (Bitmap) extras.get("data");
+    //        ImageView imFoto = (ImageView) findViewById(R.id.ivFoto);
+    //        imFoto.setImageBitmap(Bitmap.createScaledBitmap(imageBitmap,500,500,false));
+//
+    //    }
+    //}
 
 
     public void login(View v){
@@ -48,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,RegistrarCuenta.class);
         startActivity(i);
     }
+
+
 
 }
 

@@ -62,10 +62,10 @@ public class Primera extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor1,f4).commit();
                         Toast.makeText(getApplicationContext(),"Estadisticas", Toast.LENGTH_SHORT).show();
                         break;
+
                 }
 
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 //codificar cosas a ejecutar cuando una pestaña deja de estar seleccionado
@@ -76,10 +76,6 @@ public class Primera extends AppCompatActivity {
                 //codificar cosas a ejecutar cuando una pestaña se vuelve a seleccionar
             }
         });
-
-
-
-
 
     }
 
@@ -117,11 +113,57 @@ public class Primera extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void regresarlogin(View v){
-        Intent i = new Intent(this, MainActivity.class);
+    //campeonato
+
+
+    public void crearcampeonato(View v){
+        Intent i = new Intent(this, CrearCampeonatos.class);
+        startActivity(i);
+    }
+
+    public void crearfinalizar(View v){
+        Intent i = new Intent(this, HomeF.class);
+        startActivity(i);
+
+    }
+    public void homecrearcampeonato(View v){
+        Intent i = new Intent(this, HomeF.class);
         startActivity(i);
     }
 
 
 
+
+    //ligas
+
+    public void creatuligaF(View v){
+        Intent i = new Intent(this, CrearLigas.class);
+        startActivity(i);
+    }
+
+    public void home90(View v){
+        Intent i = new Intent(this, HomeF.class);
+        startActivity(i);
+    }
+
+    public void crearalgo1(View v){
+        System.out.println("ALOOOOOOOO");
+        Intent i = new Intent(this, HomeF.class);
+        startActivity(i);
+        System.out.println("CHAOOOOO");
+    }
+
+
+
+
+
+
+
+//equipos
+
+    public void creatuequiponuevo(View v){
+        Intent i = new Intent(this, selecciondeequipo.class);
+        startActivity(i);
+    }
+//estadisticas
 }

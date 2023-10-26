@@ -10,20 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="545dp">
 
-        <Button
-            android:id="@+id/button30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:onClick="homemisligass"
-            android:text="@string/btn_home2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.032" />
-
         <TextView
             android:id="@+id/textView62"
             android:layout_width="100dp"
@@ -191,7 +177,7 @@
             android:layout_width="175dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/cafe"
-            android:onClick="crearLigas"
+            android:onClick="creatuligaF"
             android:text="@string/btn_crear_liga"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"

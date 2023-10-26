@@ -14,12 +14,16 @@ public class CrearLigas extends AppCompatActivity {
         setContentView(R.layout.activity_crear_ligas);
     }
 
-    public void homecrearliga(View v){
-        Intent i = new Intent(this, Primera.class);
+    public void home90(View v){
+        Intent i = new Intent(this, HomeF.class);
         startActivity(i);
     }
-    public void crearyfinalizarligaa(View v){
-        Intent i = new Intent(this, Primera.class);
+
+    public void crearalgo1(View v){
+        System.out.println("ALOOOOOOOO");
+        Intent i = new Intent(this, HomeF.class);
         startActivity(i);
+        System.out.println("CHAOOOOO");
     }
+
 }

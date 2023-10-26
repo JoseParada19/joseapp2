@@ -6,6 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".CrearLigas">
 
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/cafe"
+        android:onClick="crearalgo1"
+        android:text="@string/crear_equipo_futsal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:onClick="home90"
+        android:text="@string/btn_home8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
     <ScrollView
         android:id="@+id/scrollView22"
         android:layout_width="370dp"
@@ -138,20 +166,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:onClick="homecrearliga"
-        android:text="@string/btn_home3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
-
     <ScrollView
         android:id="@+id/scrollView25"
         android:layout_width="370dp"
@@ -184,20 +198,6 @@
                 android:inputType="text" />
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="167dp"
-        android:layout_height="53dp"
-        android:backgroundTint="@color/cafe"
-        android:onClick="crearyfinalizarligaa"
-        android:text="@string/btnCrearLiga"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
 
     <View
         android:id="@+id/divider16"
