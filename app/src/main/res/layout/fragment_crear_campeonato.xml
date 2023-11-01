@@ -23,11 +23,11 @@
             app:layout_constraintVertical_bias="0.97" />
 
         <Button
-            android:id="@+id/button37"
+            android:id="@+id/a2aaa"
             android:layout_width="198dp"
             android:layout_height="36dp"
             android:backgroundTint="@color/cafe"
-            android:onClick="crearfinalizar"
+            android:onClick="redirigirAFragmento"
             android:text="@string/btn_finalizar_campeonato"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +217,7 @@
         </ScrollView>
 
         <Button
-            android:id="@+id/button36"
+            android:id="@+id/homecam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"

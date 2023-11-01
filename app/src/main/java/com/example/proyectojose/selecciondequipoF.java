@@ -12,10 +12,10 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CrearLigasF#newInstance} factory method to
+ * Use the {@link selecciondequipoF#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CrearLigasF extends Fragment {
+public class selecciondequipoF extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class CrearLigasF extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CrearLigasF() {
+    public selecciondequipoF() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class CrearLigasF extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CrearLigasF.
+     * @return A new instance of fragment selecciondequipoF.
      */
     // TODO: Rename and change types and number of parameters
-    public static CrearLigasF newInstance(String param1, String param2) {
-        CrearLigasF fragment = new CrearLigasF();
+    public static selecciondequipoF newInstance(String param1, String param2) {
+        selecciondequipoF fragment = new selecciondequipoF();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -57,14 +57,19 @@ public class CrearLigasF extends Fragment {
         }
     }
 
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_crear_ligas, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_selecciondequipo, container, false);
 
-        Button botonIrhome = rootView.findViewById(R.id.a3aaa);
-        Button botonIrLigas = rootView.findViewById(R.id.homeligas);
+        Button botonIrfutsal = rootView.findViewById(R.id.a6aaa);
+        Button botonirfutbol = rootView.findViewById(R.id.futbol12);
+        Button botonirbasquet = rootView.findViewById(R.id.basquet12);
+        Button botonhome = rootView.findViewById(R.id.homeme);
 
-        botonIrLigas.setOnClickListener(new View.OnClickListener() {
+        botonhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
@@ -74,12 +79,31 @@ public class CrearLigasF extends Fragment {
             }
         });
 
-        botonIrhome.setOnClickListener(new View.OnClickListener() {
+        botonirbasquet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.contenedor1, new crearequipobasquetF());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        botonirfutbol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.contenedor1, new crearequipofutbolF());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        botonIrfutsal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navegar hacia el fragmento CrearCampeonatoF
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-                transaction.replace(R.id.contenedor1, new HomeF());
+                transaction.replace(R.id.contenedor1, new crearequipofutsalF());
                 transaction.addToBackStack(null);
                 transaction.commit();
             }
@@ -88,4 +112,3 @@ public class CrearLigasF extends Fragment {
         return rootView;
     }
 }
-

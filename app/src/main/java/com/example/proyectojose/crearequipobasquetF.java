@@ -12,11 +12,10 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CampeonatoF#newInstance} factory method to
+ * Use the {@link crearequipobasquetF#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CampeonatoF extends Fragment {
-
+public class crearequipobasquetF extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +26,7 @@ public class CampeonatoF extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CampeonatoF() {
+    public crearequipobasquetF() {
         // Required empty public constructor
     }
 
@@ -37,11 +36,11 @@ public class CampeonatoF extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CampeonatoF.
+     * @return A new instance of fragment crearequipobasquetF.
      */
     // TODO: Rename and change types and number of parameters
-    public static CampeonatoF newInstance(String param1, String param2) {
-        CampeonatoF fragment = new CampeonatoF();
+    public static crearequipobasquetF newInstance(String param1, String param2) {
+        crearequipobasquetF fragment = new crearequipobasquetF();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,22 +59,30 @@ public class CampeonatoF extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_campeonato, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_crearequipobasquet, container, false);
 
-        Button botonIrACrearCampeonato = rootView.findViewById(R.id.a1aaa);
+        Button botonIrhomebasquet = rootView.findViewById(R.id.homebasquet);
+        Button botoncrearfinalizar = rootView.findViewById(R.id.crearyfinalizar);
 
-        botonIrACrearCampeonato.setOnClickListener(new View.OnClickListener() {
+        botoncrearfinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // Navegar hacia el fragmento CrearCampeonatoF
+            public void onClick(View view) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-                transaction.replace(R.id.contenedor1, new CrearCampeonatoF());
+                transaction.replace(R.id.contenedor1, new HomeF());
                 transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
 
+        botonIrhomebasquet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.contenedor1, new HomeF());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
         return rootView;
     }
 }
-

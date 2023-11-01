@@ -23,7 +23,7 @@
             app:layout_constraintVertical_bias="0.707" />
 
         <ScrollView
-            android:id="@+id/scrollView3"
+            android:id="@+id/scrollView100"
             android:layout_width="200dp"
             android:layout_height="80dp"
             android:background="#A1A1A1"
@@ -70,7 +70,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.069" />
+            app:layout_constraintVertical_bias="0.073" />
 
         <TextView
             android:id="@+id/textView66"
@@ -125,15 +125,16 @@
 
         <TextView
             android:id="@+id/textView67"
-            android:layout_width="128dp"
-            android:layout_height="20dp"
+            android:layout_width="151dp"
+            android:layout_height="22dp"
             android:background="@color/cafe"
             android:text="@string/mis_campeonatos2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.03" />
+            app:layout_constraintVertical_bias="0.034" />
 
         <View
             android:id="@+id/divider40"
@@ -186,7 +187,7 @@
             app:srcCompat="@drawable/_af135355af40ec1048e23ddb2614bbd" />
 
         <ScrollView
-            android:id="@+id/scrollView3"
+            android:id="@+id/scrollView100"
             android:layout_width="200dp"
             android:layout_height="80dp"
             android:background="#A1A1A1"
@@ -211,11 +212,9 @@
         </ScrollView>
 
         <Button
-            android:id="@+id/button33"
             android:layout_width="157dp"
             android:layout_height="48dp"
             android:backgroundTint="#A1A1A1"
-            android:onClick="crearcampeonato"
             android:text="@string/btn_Crear"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"

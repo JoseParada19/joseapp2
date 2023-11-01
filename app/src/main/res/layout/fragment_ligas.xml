@@ -176,7 +176,7 @@
             app:srcCompat="@drawable/_28e397c8d831216ce0bf6d7392366d8" />
 
         <Button
-            android:id="@+id/button31"
+            android:id="@+id/a4aaa"
             android:layout_width="175dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/cafe"

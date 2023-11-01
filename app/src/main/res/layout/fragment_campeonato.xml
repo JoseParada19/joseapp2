@@ -11,11 +11,10 @@
         android:layout_height="545dp">
 
         <Button
-            android:id="@+id/button24"
+            android:id="@+id/a1aaa"
             android:layout_width="157dp"
             android:layout_height="48dp"
             android:backgroundTint="#A1A1A1"
-            android:onClick="crearcampeonato"
             android:text="@string/btn_Crear"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -23,6 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.959" />
+
 
         <View
             android:id="@+id/divider24"
@@ -143,14 +143,14 @@
             android:rotation="-90"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintHorizontal_bias="0.13"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.967"
             app:srcCompat="@drawable/_4b97cedf359a5fd6d9f32fc2f2b9f51" />
 
         <ScrollView
-            android:id="@+id/scrollView3"
+            android:id="@+id/scrollView100"
             android:layout_width="200dp"
             android:layout_height="80dp"
             android:background="#A1A1A1"
@@ -159,7 +159,7 @@
             app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.134">
+            app:layout_constraintVertical_bias="0.131">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -224,7 +224,7 @@
             app:srcCompat="@drawable/_af135355af40ec1048e23ddb2614bbd" />
 
         <ScrollView
-            android:id="@+id/scrollView3"
+            android:id="@+id/scrollView1000"
             android:layout_width="200dp"
             android:layout_height="80dp"
             android:background="#A1A1A1"

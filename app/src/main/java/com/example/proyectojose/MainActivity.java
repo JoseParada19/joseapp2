@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         //System.out.println(correo+" "+contrasenia);
 
-        if(correo.equals("jose@gmail.com") && contrasenia.equals("12345")){
+        if(correo.equals("") && contrasenia.equals("")){
             Intent i = new Intent(this,Primera.class);
             startActivity(i);
         }else{
