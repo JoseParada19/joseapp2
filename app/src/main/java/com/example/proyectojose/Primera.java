@@ -90,23 +90,13 @@ public class Primera extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId(); //Esto recupera el ID de las opciones del menu (mis campeonatos,mis ligas,mi equipo)
         if(id==R.id.MC){
-            Toast.makeText(this,"Te dirijes a Mis Campeonatos",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Quienes Somos",Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this,MisCampeonatos.class);
             startActivity(i);
         }
         else if(id==R.id.ML){
-            Toast.makeText(this,"Te dirijes a Mis Ligas",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"¿Problemas con la App?",Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this, MisLigas.class);
-            startActivity(i);
-        }
-        else if(id==R.id.ME){
-            Toast.makeText(this,"Te dirijes a Mi Equipo",Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(this, MiEquipo.class);
-            startActivity(i);
-        }
-        else if(id==R.id.E){
-            Toast.makeText(this,"Te dirijes a Estadisticas",Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(this, EstadisticasDeJugadores.class);
             startActivity(i);
         }
 

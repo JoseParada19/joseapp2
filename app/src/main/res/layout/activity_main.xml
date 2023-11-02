@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botonIngresarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
@@ -64,6 +64,6 @@
         android:textColor="#F8F6F6"
         android:textColorHint="#FFF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/botonIngresarLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

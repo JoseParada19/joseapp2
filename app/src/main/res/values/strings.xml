@@ -26,9 +26,22 @@
 
     //Menu
 
-    <string name="MisCampeonatos">Mis Campeonatos</string>
-    <string name="MisLigas">Mis Ligas</string>
-    <string name="MisEquipo">Mi Equipo</string>
+    <string name="MisCampeonatos">Quienes Somos</string>
+    <string name="MisLigas">¿Algun Problema con la App?</string>
+
+    //problema con al app
+
+    <string name="problema">¿Algun Problema con al App?</string>
+    <string name="comentalo">Comentalo aca</string>
+    <string name="sugerencia">Tienes alguna Sugerencia</string>
+
+    //Quienes somos
+
+
+    <string name="quienes_somosss">Quienes Somos</string>
+    <string name="somosss">Somos una empresa dedicada a hacer Apps para los fanaticos del deporte, hacemos todo tipo de apps mobiles y Webs</string>
+
+
 
 
     //Mis Campeonatos

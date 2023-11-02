@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -15,38 +16,59 @@ import android.widget.Toast;
 import com.google.firebase.Firebase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.BitSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText correoingresar, contraseniaingresar;
+    private FirebaseFirestore db;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private StorageReference mStorage;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        correoingresar= findViewById(R.id.correo);
+        contraseniaingresar= findViewById(R.id.contrasenia);
+
+        db= FirebaseFirestore.getInstance();
+
+        Button datoslogin = findViewById(R.id.botonIngresarLogin);
+
+
         mStorage = FirebaseStorage.getInstance().getReference();
     }
 
-    //public void tomar_foto(View v){
-    //    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-    //    if(takePictureIntent.resolveActivity(getPackageManager())!=null){
-    //        startActivityForResult(takePictureIntent,REQUEST_IMAGE_CAPTURE);
-    //    }
-    //}
-//
-    //@Override
-    //protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-    //    super.onActivityResult(requestCode, resultCode, data);
-    //    if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
-    //        Bundle extras = data.getExtras();
-    //        Bitmap imageBitmap = (Bitmap) extras.get("data");
-    //        ImageView imFoto = (ImageView) findViewById(R.id.ivFoto);
-    //        imFoto.setImageBitmap(Bitmap.createScaledBitmap(imageBitmap,500,500,false));
-//
-    //    }
-    //}
+    private void GuardarDatosBD(){
+        String usuario = correoingresar.getText().toString();
+        String contra = contraseniaingresar.getText().toString();
+
+
+
+        Map<String, Object> datos = new HashMap<>();
+        datos.put("Usuario",usuario);
+        datos.put("Contraseña", contra);
+
+
+        db.collection("Login")
+                .add(datos)
+                .addOnSuccessListener(documentReference -> {
+                    Toast.makeText(getApplicationContext(), "Datos guardados", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
+                });
+
+    }
+
 
 
     public void login(View v){

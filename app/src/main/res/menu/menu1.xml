@@ -11,14 +11,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="@string/MisLigas" />
-    <item
-        android:id="@+id/ME"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="@string/MisEquipo" />
-    <item
-        android:id="@+id/E"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="@string/Estadisticas" />
 </menu>
